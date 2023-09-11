@@ -5,7 +5,7 @@
         <mapEntry key="JAVA_HOME" value="${maven.build.java.home}"/>
         <mapEntry key="PATH" value="${maven.bash.home}/../usr/bin${system_property:path.separator}${env_var:PATH}"/>
     </mapAttribute>
-    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${project_loc:/org.eclipse.orbit.simrel}/maven-bnd/build.log"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${project_loc:/org.eclipse.orbit.legacy}/build.log"/>
     <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
         <listEntry value="org.eclipse.ui.externaltools.launchGroup"/>
     </listAttribute>
