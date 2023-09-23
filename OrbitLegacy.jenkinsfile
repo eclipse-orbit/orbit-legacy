@@ -4,7 +4,7 @@ pipeline {
    options {
     buildDiscarder(logRotator(numToKeepStr: '10'))
     disableConcurrentBuilds()
-    skipDefaultCheckout true
+    // skipDefaultCheckout true
   }
 
   tools {
@@ -47,6 +47,7 @@ PROMOTE=${params.PROMOTE}
       }
     }
 
+/*
     stage('Git Checkout') {
       steps {
         script {
@@ -69,6 +70,7 @@ PROMOTE=${params.PROMOTE}
         }
       }
     }
+*/
 
     stage('Build Orbit Legacy') {
       steps {
