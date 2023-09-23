@@ -1,0 +1,1 @@
+The builds were creating a shallow clone that produced a new qualifier for any commit in the Git repository, so we need to force a new stable qualifier. 

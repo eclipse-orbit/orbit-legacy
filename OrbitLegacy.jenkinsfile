@@ -54,11 +54,11 @@ PROMOTE=${params.PROMOTE}
             poll: false,
             scm: [
               $class: 'GitSCM',
-              branches: [[name: '*/main']],
+              branches: [[name: '*' + '/main']],
               doGenerateSubmoduleConfigurations: false,
               submoduleCfg: [],
               extensions: [
-                [$class: 'CloneOption', shallow: true]
+                [$class: 'CloneOption', shallow: false]
               ],
               userRemoteConfigs: [[url: 'https://github.com/eclipse-orbit/orbit-legacy.git' ]]
             ]
@@ -95,8 +95,11 @@ PROMOTE=${params.PROMOTE}
   }
 
   post {
-    failure {
+    always {
       archiveArtifacts '**'
+    }
+
+    failure {
       mail to: 'ed.merks@gmail.com',
       subject: "[Orbit CI] Build Failure ${currentBuild.fullDisplayName}",
       mimeType: 'text/html',
