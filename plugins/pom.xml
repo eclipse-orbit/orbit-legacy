@@ -22,6 +22,7 @@
 
   <modules>
     <module>org.eclipse.orbit.xml-apis-ext</module>
+    <module>org.eclipse.orbit.sun.security</module>
     <module>org.apache.wsil4j</module>
     <module>org.uddi4j</module>
   </modules>

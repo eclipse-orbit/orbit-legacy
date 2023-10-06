@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Orbit Sun Security
+Bundle-Vendor: Orbit Project
+Bundle-SymbolicName: org.eclipse.orbit.sun.security
+Bundle-Version: 0.1.0.qualifier
+Automatic-Module-Name: org.eclipse.orbit.sun.security
+Export-Package: sun.security.x509
+Import-Package: sun.security.x509
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
