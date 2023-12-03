@@ -191,7 +191,7 @@
             <baselineReplace>all</baselineReplace>
             <baselineRepositories>
               <repository>
-                <url>https://download.eclipse.org/tools/orbit/simrel/orbit-legacy/release/latest</url>
+                <url>https://download.eclipse.org/tools/orbit/simrel/orbit-legacy/nightly/latest</url>
               </repository>
             </baselineRepositories>
             <ignoredPatterns>
