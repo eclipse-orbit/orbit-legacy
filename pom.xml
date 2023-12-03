@@ -9,9 +9,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>4.0.2</tycho-version>
+    <tycho-version>4.0.4</tycho-version>
     <jarsigner-version>1.4.2</jarsigner-version>
-    <eclipse.repo>https://download.eclipse.org/releases/2023-06</eclipse.repo>
+    <eclipse.repo>https://download.eclipse.org/releases/2023-12</eclipse.repo>
     <tycho.scmUrl>scm:git:https://github.com/eclipse-orbit/orbit-legacy.git</tycho.scmUrl>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
     <org.eclipse.storage.user>genie.orbit</org.eclipse.storage.user>
@@ -151,14 +151,6 @@
             <timestampProvider>jgit</timestampProvider>
             <jgit.ignore>pom.xml .gitignore .settings/**</jgit.ignore>
             <jgit.dirtyWorkingTree>warning</jgit.dirtyWorkingTree>
-            <additionalFileSets>
-              <fileSet>
-                <directory>${project.build.outputDirectory}</directory>
-                <includes>
-                  <include>about.mappings</include>
-                </includes>
-              </fileSet>
-            </additionalFileSets>
           </configuration>
           <dependencies>
             <dependency>
@@ -194,6 +186,19 @@
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-p2-plugin</artifactId>
           <version>${tycho-version}</version>
+          <configuration>
+            <baselineMode>warn</baselineMode>
+            <baselineReplace>all</baselineReplace>
+            <baselineRepositories>
+              <repository>
+                <url>https://download.eclipse.org/tools/orbit/simrel/orbit-legacy/release/latest</url>
+              </repository>
+            </baselineRepositories>
+            <ignoredPatterns>
+              <pattern>META-INF/ECLIPSE_.RSA</pattern>
+              <pattern>META-INF/ECLIPSE_.SF</pattern>
+            </ignoredPatterns>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
