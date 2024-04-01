@@ -9,9 +9,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>4.0.4</tycho-version>
+    <tycho-version>4.0.7</tycho-version>
     <jarsigner-version>1.4.3</jarsigner-version>
-    <eclipse.repo>https://download.eclipse.org/releases/2023-12</eclipse.repo>
+    <eclipse.repo>https://download.eclipse.org/releases/latest</eclipse.repo>
     <tycho.scmUrl>scm:git:https://github.com/eclipse-orbit/orbit-legacy.git</tycho.scmUrl>
     <justj.tools.repo>https://download.eclipse.org/justj/tools/updates/nightly/latest</justj.tools.repo>
     <org.eclipse.storage.user>genie.orbit</org.eclipse.storage.user>
