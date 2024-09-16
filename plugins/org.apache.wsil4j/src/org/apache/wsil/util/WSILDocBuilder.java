@@ -249,7 +249,7 @@ public class WSILDocBuilder
               // Set endpointPresent accordingly
               // ADS            if (wsdlDocument.isServiceInterface() == true)
               //            {
-                  reference.setEndpointPresent(new Boolean("true"));
+                  reference.setEndpointPresent(Boolean.valueOf("true"));
                   //            }
 
               // Add referencedService if there are more then 1 service defined

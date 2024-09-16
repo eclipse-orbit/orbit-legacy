@@ -55,4 +55,4 @@ Import-Package: javax.xml.rpc,
  org.w3c.dom
 Bundle-Vendor: Eclipse Orbit
 Automatic-Module-Name: org.uudi4j
-Bundle-RequiredExecutionEnvironment: J2SE-1.4
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

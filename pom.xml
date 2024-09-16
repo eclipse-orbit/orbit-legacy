@@ -138,6 +138,7 @@
               <arg>-warn:-restriction</arg>
             </compilerArgs>
             <useProjectSettings>true</useProjectSettings>
+            <useJDK>BREE</useJDK>
           </configuration>
         </plugin>
         <plugin>
