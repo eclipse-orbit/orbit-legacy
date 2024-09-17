@@ -307,7 +307,7 @@ public class DispositionReport extends UDDIElement {
 		// Did all results return successful
 		boolean success = true;
 		for( int i = 0; i < results.size(); i++ ) {
-			int errnoInt = new Integer(((Result)results.elementAt(i)).getErrno()).intValue();
+			int errnoInt = Integer.parseInt(((Result)results.elementAt(i)).getErrno());
 			success = success && (errnoInt == 0);
 		}
 		return success;
