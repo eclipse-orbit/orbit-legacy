@@ -24,6 +24,6 @@ SPDX-License-Identifier: EPL-2.0
 
   <groupId>org.eclipse.orbit.legacy.features</groupId>
   <artifactId>org.eclipse.orbit.legacy</artifactId>
-  <version>4.36.0-SNAPSHOT</version>
+  <version>4.37.0-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 </project>
