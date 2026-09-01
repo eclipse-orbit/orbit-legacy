@@ -41,8 +41,4 @@ SPDX-License-Identifier: EPL-2.0
          id="org.apache.wsil4j"
          version="0.0.0"/>
 
-   <plugin
-         id="org.eclipse.orbit.sun.security"
-         version="0.0.0"/>
-
 </feature>
